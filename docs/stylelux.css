@@ -84,7 +84,7 @@ header {
 button {
     color: white;
     padding: 9px 25px;
-    background-color: rgba(9, 164, 203, 0.8);
+    background-color: #f4ae20;
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -92,7 +92,7 @@ button {
 }
 
 button:hover {
-    background-color: rgb(37, 188, 226);
+    background-color: #fabd2f;
 }
 
 .main-title {
@@ -285,6 +285,7 @@ header {
     padding-top: 50px;
     display: flex;
     justify-content: space-evenly;
+    flex-direction: row;
 }
 
 .service-title1 {
@@ -424,4 +425,79 @@ header {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     unicode-bidi: isolate;
+}
+
+.main-text-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Add media queries to adjust the layout for different screen sizes */
+@media only screen and (max-width: 1200px) {
+
+    /* For screens up to 1200px wide, make the main text container full-width */
+    .main-text-container {
+        width: 100%;
+    }
+
+    /* Adjust the padding and margin for smaller screens */
+    .main-text-left,
+    .main-text-right {
+        padding: 20px;
+        margin: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .main-text-container {
+        flex-direction: column;
+    }
+
+    .main-text-left,
+    .main-text-right {
+        padding: 10px;
+        margin: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .main-text-container {
+        padding: 10px;
+    }
+
+    .main-text-left h2,
+    .main-text-right h5 {
+        font-size: 24px;
+    }
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 800px) {
+    .service-area1 {
+        flex-direction: column;
+    }
+
+    .service-block1 {
+        margin-bottom: 2rem;
+        margin-left: 1.25em;
+    }
+
+    .service-block2 {
+        margin-bottom: 2rem;
+        margin-left: 1.25em;
+    }
+
+    .service-block3 {
+        margin-bottom: 2rem;
+        margin-left: 1.25em;
+    }
 }

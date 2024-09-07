@@ -1,5 +1,13 @@
+@font-face {
+    font-family: "Funnel Display";
+    src: url("fonts/FunnelDisplay-Medium.ttf") format('truetype');
+
+    font-family: "Sedan";
+    src: url("fonts/Sedan-Regular.ttf") format('truetype');
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Sedan";
     font-size: 16px;
     margin: 0;
     padding: 0;
@@ -7,22 +15,22 @@ body {
 }
 
 body {
-    background: hsla(43, 72%, 13%, 1);
+    background: #e0b340;
 
     background: linear-gradient(135deg,
-            hsla(43, 72%, 13%, 1) 0%,
-            #fada57 67%,
-            #d79921 100%);
+            #e0b340 0%,
+            #FADA57 67%,
+            #e0b340 100%);
 
     background: -moz-linear-gradient(135deg,
-            hsla(43, 72%, 13%, 1) 0%,
-            #fada57 67%,
-            #d79921 100%);
+            #e0b340 0%,
+            #FADA57 67%,
+            #e0b340 100%);
 
     background: -webkit-linear-gradient(135deg,
-            hsla(43, 72%, 13%, 1) 0%,
-            #fabd2f 67%,
-            #d79921 100%);
+            #e0b340 0%,
+            #FADA57 67%,
+            #e0b340 100%);
 
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#382B09", endColorstr="#FADA57", GradientType=1);
 }
@@ -134,4 +142,8 @@ header {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     unicode-bidi: isolate;
+}
+
+h3 {
+    font-family: "Funnel Display";
 }

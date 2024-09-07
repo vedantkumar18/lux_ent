@@ -7,171 +7,22 @@ body {
 }
 
 body {
-    background: #e0b340;
+    background: hsla(43, 72%, 13%, 1);
 
     background: linear-gradient(135deg,
-            #e0b340 10%,
-            #FADA57 60%,
-            #ffe755 100%);
+            hsla(43, 72%, 13%, 1) 0%,
+            #fada57 67%,
+            #d79921 100%);
 
     background: -moz-linear-gradient(135deg,
-            #e0b340 10%,
-            #FADA57 67%,
-            #ffe236 100%);
+            hsla(43, 72%, 13%, 1) 0%,
+            #fada57 67%,
+            #d79921 100%);
 
     background: -webkit-linear-gradient(135deg,
-            #e0b340 -2%,
-            #FADA57 70%,
-            #ffe755 100%);
-
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#382B09", endColorstr="#FADA57", GradientType=1);
-}
-
-div {
-    display: block;
-    unicode-bidi: isolate;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-li a button {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: #edf0f1;
-    text-decoration: none;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
-}
-
-.logo {
-    height: 90px;
-    margin-top: 20px;
-    cursor: pointer;
-}
-
-.nav_links {
-    margin-left: 10px;
-    list-style: none;
-    align-self: center;
-}
-
-.nav_links li {
-    display: inline-block;
-    padding: 0px 20px;
-}
-
-.nav_links li a {
-    color: white;
-    text-decoration: none;
-    transition: all 0.3s ease 0s;
-}
-
-.nav_links li a:hover {
-    color: #b0d8e2;
-}
-
-button {
-    color: white;
-    padding: 9px 25px;
-    background-color: #f4ae20;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
-
-button:hover {
-    background-color: #fabd2f;
-}
-
-.main-title {
-    color: #fff;
-    text-align: center;
-    font-size: 40px;
-    padding: 10px;
-    padding-bottom: 20px;
-}
-
-.service .block h4 {
-    text-align: center;
-    font-size: 18px;
-    margin-top: 20px;
-    scroll-margin-bottom: 20px;
-}
-
-.service {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    color: #fff;
-    padding-bottom: 10px;
-}
-
-.service-img {
-    padding: 15px;
-    height: 35vh;
-}
-
-.contact {
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: black;
-    color: #fff;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.contact h2 {
-    font-size: 40px;
-}
-
-.contact p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    unicode-bidi: isolate;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
-    display: block;
-}
-
-body {
-    background: #e0b340;
-
-    background: linear-gradient(135deg,
-            #e0b340 10%,
-            #FADA57 67%,
-            #ffe755 100%);
-
-    background: -moz-linear-gradient(135deg,
-            #e0b340 10%,
-            #FADA57 67%,
-            #ffe755 100%);
-
-    background: -webkit-linear-gradient(135deg,
-            #e0b340 10%,
-            #FADA57 67%,
-            #ffe755 100%);
+            hsla(43, 72%, 13%, 1) 0%,
+            #fabd2f 67%,
+            #d79921 100%);
 
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#382B09", endColorstr="#FADA57", GradientType=1);
 }
@@ -244,167 +95,30 @@ header {
     background-color: #fabd2f;
 }
 
-.main-text-container {
-    padding-top: 40px;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.main-text-left {
-    display: block;
-    width: 400px;
-}
-
-.main-text-left h2 {
-    font-size: 69px;
-    color: #fff;
-}
-
-.main-text-left p {
-    color: #fff;
-}
-
-.main-text-right {
-    display: block;
-    width: 800px;
-    padding-right: 90px;
-}
-
-.main-text-right h5 {
-    font-size: 30px;
-    color: #fff;
-}
-
-.main-text-right a {
-    text-align: center;
-    text-decoration: none;
-    color: #ea1bb3;
-}
-
-.service-area1 {
-    padding-top: 50px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-}
-
-.service-title1 {
+.main-title {
     color: #fff;
     text-align: center;
-    font-size: 60px;
-    display: block;
-    padding-top: 30px;
-}
-
-.service-block3 {
-    width: 370px;
-    background-color: #fff;
-    padding-top: 10px;
-    padding-left: 10px;
-}
-
-.service-block2 {
-    width: 370px;
-    background-color: #fff;
-    padding-top: 10px;
-    padding-left: 10px;
-}
-
-.service-block1 {
-    width: 370px;
-    background-color: #fff;
-}
-
-.service-text1 {
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    display: flex;
-}
-
-.service-img1 {
-    display: block;
-}
-
-.service-text-content {
-    display: block;
-}
-
-.service-text-content h2 {
     font-size: 40px;
-    display: block;
-}
-
-.service-text-content p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    unicode-bidi: isolate;
-}
-
-.service-text2 {
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    display: flex;
-}
-
-.service-img2 {
-    display: block;
-}
-
-.service-text-content2 {
-    display: block;
-}
-
-.service-text-content2 h2 {
-    font-size: 40px;
-    display: block;
-}
-
-.service-text-content2 p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    unicode-bidi: isolate;
-}
-
-.button-container {
-    padding-top: 50px;
+    padding: 10px;
     padding-bottom: 20px;
-    display: block;
+}
+
+.service .block h4 {
     text-align: center;
+    font-size: 18px;
 }
 
-.button1-text {
+.service {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     color: #fff;
-    text-decoration: none;
-    background-color: #ff9c00;
-    padding: 30px;
-    border: 1px solid #ffffff;
-    border-radius: 5px;
+    padding-bottom: 10px;
 }
 
-.button2-text {
-    color: #fff;
-    text-decoration: none;
-    background-color: black;
-    padding: 30px;
-    border: 1px solid #ffffff;
-    border-radius: 5px;
-}
-
-.button3-text {
-    color: #fff;
-    text-decoration: none;
-    background-color: black;
-    padding: 30px;
-    border: 1px solid #ffffff;
-    border-radius: 5px;
+.service-img {
+    padding: 15px;
+    height: 35vh;
 }
 
 .contact {
@@ -425,79 +139,4 @@ header {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     unicode-bidi: isolate;
-}
-
-.main-text-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-/* Add media queries to adjust the layout for different screen sizes */
-@media only screen and (max-width: 1200px) {
-
-    /* For screens up to 1200px wide, make the main text container full-width */
-    .main-text-container {
-        width: 100%;
-    }
-
-    /* Adjust the padding and margin for smaller screens */
-    .main-text-left,
-    .main-text-right {
-        padding: 20px;
-        margin: 20px;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-
-    .main-text-container {
-        flex-direction: column;
-    }
-
-    .main-text-left,
-    .main-text-right {
-        padding: 10px;
-        margin: 10px;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-
-    .main-text-container {
-        padding: 10px;
-    }
-
-    .main-text-left h2,
-    .main-text-right h5 {
-        font-size: 24px;
-    }
-}
-
-.flex-container {
-    display: flex;
-    flex-direction: row;
-}
-
-@media (max-width: 800px) {
-    .service-area1 {
-        flex-direction: column;
-    }
-
-    .service-block1 {
-        margin-bottom: 2rem;
-        margin-left: 1.25em;
-    }
-
-    .service-block2 {
-        margin-bottom: 2rem;
-        margin-left: 1.25em;
-    }
-
-    .service-block3 {
-        margin-bottom: 2rem;
-        margin-left: 1.25em;
-    }
 }

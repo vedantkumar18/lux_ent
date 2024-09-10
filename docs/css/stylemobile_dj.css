@@ -158,6 +158,8 @@ header {
 
 .service-text {
     padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
     padding-bottom: 10px;
     display: flex;
 }
@@ -233,4 +235,12 @@ header {
 
 h4 {
     font-family: "Funnel Display";
+}
+
+.service-img {
+    transition: ease-in-out 0.2s;
+}
+
+.service-img:hover {
+    zoom: 115%;
 }

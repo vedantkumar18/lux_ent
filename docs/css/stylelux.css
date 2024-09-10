@@ -147,3 +147,11 @@ header {
 h3 {
     font-family: "Funnel Display";
 }
+
+img {
+    transition: ease-in-out 0.2s;
+}
+
+img:hover {
+    zoom: 115%;
+}

@@ -150,8 +150,15 @@ h3 {
 
 img {
     transition: ease-in-out 0.2s;
+    -webkit-filter: brightness(90%);
 }
 
 img:hover {
     zoom: 115%;
+    -webkit-filter: brightness(75%);
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
 }

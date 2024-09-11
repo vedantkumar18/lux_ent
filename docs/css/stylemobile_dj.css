@@ -238,7 +238,7 @@ h4 {
 }
 
 .service-img {
-  transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.15s;
 }
 
 .service-img:hover {

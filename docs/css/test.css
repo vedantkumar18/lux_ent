@@ -1,0 +1,106 @@
+.title {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    padding-top: 6em;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+img {
+    padding-top: 8em;
+    max-width: 20em;
+    max-height: 20em;
+    position: relative;
+}
+
+.curtain {
+    position: absolute;
+    /* added */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    background-color: #b8bb26;
+    padding: 20px;
+    transform: translateY(-100%);
+    /* added */
+    transition: transform 2s ease-in-out;
+    /* added */
+}
+
+.idk {
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    padding-top: 3em;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    font-size: 28px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #fbfbfb;
+}
+
+.button {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    padding: 9px 25px;
+    background-color: #f4ae20;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-top: 14px;
+    float: right;
+}
+
+.button :hover {
+    background-color: #fabd2f;
+}
+
+.scroll-down {
+    opacity: 1;
+    transform: translateY(-50px);
+    transition: opacity 5s ease-in-out, transform 5s ease-in-out;
+}
+
+.scroll-down.in-view {
+    opacity: 0;
+    transform: translateY(0);
+    transition: transform 5s ease-in-out;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.header {
+    position: relative;
+}

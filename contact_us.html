@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact us</title>
+    <link rel="stylesheet" href="stylecontact.css" />
+  </head>
+  <body>
+    <div>
+      <a href="index.html"
+        ><img src="lux_icons/Final Lux Reloaded!.png" alt="Logo" class="logo"
+      /></a>
+      <a href="index.html" class="navbar"><nav>Services</nav></a>
+    </div>
+    <div class="contact-container">
+      <form
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        class="contact-left"
+      >
+        <div class="contact-left-title">
+          <h2>Get in touch</h2>
+          <hr />
+        </div>
+        <input
+          type="hidden"
+          name="access_key"
+          value="94279392-86de-42ac-b9ae-5a123637765d"
+        />
+        <input
+          type="text"
+          name="name"
+          placeholder="your name"
+          class="contact-inputs"
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="your email"
+          class="contact-inputs"
+          required
+        />
+        <textarea
+          name="message"
+          placeholder="your message"
+          class="contact-inputs"
+          required
+        ></textarea>
+        <button type="submit">Submit</button>
+      </form>
+      <div class="contact-right">
+        <img src="lux_img/right_img.png" alt="" />
+      </div>
+    </div>
+  </body>
+</html>

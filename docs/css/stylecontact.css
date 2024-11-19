@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: hsla(0, 0%, 0%, 1);
+
+  background: linear-gradient(
+    45deg,
+    hsla(0, 0%, 0%, 1) 0%,
+    hsla(222, 8%, 57%, 1) 64%,
+    hsla(226, 11%, 23%, 1) 67%,
+    hsla(231, 12%, 77%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    45deg,
+    hsla(0, 0%, 0%, 1) 0%,
+    hsla(222, 8%, 57%, 1) 64%,
+    hsla(226, 11%, 23%, 1) 67%,
+    hsla(231, 12%, 77%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    45deg,
+    hsla(0, 0%, 0%, 1) 0%,
+    hsla(222, 8%, 57%, 1) 64%,
+    hsla(226, 11%, 23%, 1) 67%,
+    hsla(231, 12%, 77%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#898E9A", GradientType=1 );
+  font-family: outfit;
+}
+.contact-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+.contact-left-title h2 {
+  font-weight: 600;
+  color: #e06dec;
+  font-size: 70px;
+}
+.contact-left-title hr {
+  border: none;
+  width: 120px;
+  height: 5px;
+  background-color: #a363aa;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-inputs {
+  width: 400px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-left: 25px;
+  font-weight: 500;
+  color: #000000;
+  border-radius: 20px;
+}
+.contact-left textarea {
+  height: 140px;
+  padding-top: 15px;
+  border-radius: 20px;
+}
+.contact-inputs:focus {
+  border: 2px solid #ff994f;
+}
+.navbar {
+  color: #fff;
+  padding-top: 20px;
+  font-size: 30px;
+  text-align: center;
+  position: fixed;
+  text-decoration: none;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.contact-inputs::placeholder {
+  color: #292626;
+}
+.contact-left button {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 16px;
+  color: #fff;
+  gap: 10px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(270deg, #ff994f, #fa6d86);
+  cursor: pointer;
+}
+.contact-right img {
+  width: 500px;
+}
+.logo {
+  height: 130px;
+  cursor: pointer;
+  position: fixed;
+  text-decoration: none;
+  top: 0;
+  z-index: 1;
+}

@@ -1,20 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Montserrat:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Montserrat:wght@300;400;500&display=swap");
 
-html, body {
+html,
+body {
   min-height: 100vh;
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(135deg, 
-    #1a1a1a 0%,    /* Rich black */
-    #2c2c2c 50%,   /* Dark charcoal */
-    #1a1a1a 100%
+  background: linear-gradient(
+    135deg,
+    #1a1a1a 0%,
+    /* Rich black */ #2c2c2c 50%,
+    /* Dark charcoal */ #1a1a1a 100%
   );
   background-attachment: fixed;
-  color: #e0e0e0;  /* Soft silver */
+  color: #e0e0e0; /* Soft silver */
 }
 
 header {
@@ -39,7 +41,7 @@ header {
 }
 
 .logo-text {
-  font-family: 'Cinzel', serif;
+  font-family: "Cinzel", serif;
   color: #c0c0c0;
   margin: 0;
   text-transform: uppercase;
@@ -49,7 +51,7 @@ header {
 }
 
 .main-title h3 {
-  font-family: 'Cinzel', serif;
+  font-family: "Cinzel", serif;
   font-size: 2.2em;
   text-align: center;
   color: #c0c0c0;
@@ -84,7 +86,7 @@ header {
 }
 
 .block h4 {
-  font-family: 'Cinzel', serif;
+  font-family: "Cinzel", serif;
   font-size: 1.5em;
   color: #c0c0c0;
   margin-bottom: 20px;
@@ -114,7 +116,7 @@ header {
 }
 
 .button-text {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 15px;
   color: #e0e0e0;
@@ -136,8 +138,14 @@ header {
 
 /* Add subtle animation for page load */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .service {
@@ -163,7 +171,7 @@ header {
 }
 
 .main-text-left h2 {
-  font-family: 'Cinzel', serif;
+  font-family: "Cinzel", serif;
   font-size: 2.5em;
   color: #c0c0c0;
   margin-bottom: 20px;
@@ -182,7 +190,7 @@ header {
 }
 
 .service-title h4 {
-  font-family: 'Cinzel', serif;
+  font-family: "Cinzel", serif;
   font-size: 2em;
   color: #c0c0c0;
   text-transform: uppercase;
@@ -191,10 +199,11 @@ header {
 
 .service-area {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 30px;
   padding: 20px 5%;
-  flex-wrap: wrap;
+  /*can remove the flex wrap property to result in 3 blocks side by side rather than 2 above and 1 below
+  note ill remove it cause it looks fuckin shit with it*/
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -203,7 +212,7 @@ header {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(192, 192, 192, 0.3);
   border-radius: 10px;
-  padding: 25px;
+  padding: 20px;
   margin: 15px;
   width: calc(33.33% - 60px);
   min-width: 300px;
@@ -218,18 +227,18 @@ header {
 }
 
 .service-text-content {
-  padding: 20px 0;
-  text-align: left;  /* Align text to left for better readability */
+  padding: 15px 0;
+  text-align: left; /* Align text to left for better readability */
 }
 
 .service-text-content h2 {
-  font-family: 'Cinzel', serif;
+  font-family: "Cinzel", serif;
   font-size: 1.8em;
   color: #c0c0c0;
   margin-bottom: 15px;
   letter-spacing: 1px;
 }
-
+/*removed the p cause it didnt make any diff with it*/
 .service-text-content p {
   color: #e0e0e0;
   line-height: 1.6;
@@ -297,7 +306,7 @@ header {
 }
 
 .button-text-below-block {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
   color: #e0e0e0;
@@ -348,7 +357,7 @@ header {
 }
 
 .contact h2 {
-  font-family: 'Cinzel', serif;
+  font-family: "Cinzel", serif;
   color: #c0c0c0;
   margin-bottom: 20px;
 }
@@ -363,7 +372,7 @@ header {
   .service-block {
     width: calc(50% - 60px);
   }
-  
+
   .service-img {
     height: 220px;
   }
@@ -375,20 +384,20 @@ header {
     max-width: 500px;
     margin: 15px auto;
   }
-  
+
   .service-img {
     height: 200px;
   }
-  
+
   .main-text-container {
     flex-direction: column;
   }
-  
+
   header {
     flex-direction: column;
     gap: 20px;
   }
-  
+
   .nav_links {
     margin: 20px 0;
   }
@@ -404,7 +413,7 @@ header {
 }
 
 .nav_links li a {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #c0c0c0;
   text-decoration: none;
   font-size: 16px;
@@ -418,7 +427,7 @@ header {
 
 /* Underline animation effect */
 .nav_links li a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -443,7 +452,7 @@ header {
     gap: 20px;
     text-align: center;
   }
-  
+
   .nav_links li a::after {
     left: 50%;
     transform: translateX(-50%);
@@ -472,7 +481,7 @@ header {
 }
 
 .contact-left-title h2 {
-  font-family: 'Cinzel', serif;
+  font-family: "Cinzel", serif;
   color: #c0c0c0;
   font-size: 2.5em;
   margin-bottom: 10px;
@@ -486,14 +495,14 @@ header {
 }
 
 .contact-inputs {
-  width: 100%;
+  width: 96%;
   margin-bottom: 20px;
   padding: 15px;
   border: 1px solid rgba(192, 192, 192, 0.3);
   border-radius: 5px;
   background: rgba(255, 255, 255, 0.05);
   color: #e0e0e0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   transition: all 0.3s ease;
 }
 
@@ -513,7 +522,7 @@ textarea.contact-inputs {
 }
 
 .contact-left button {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
   color: #e0e0e0;
@@ -558,11 +567,11 @@ textarea.contact-inputs {
   .contact-container {
     flex-direction: column;
   }
-  
+
   .contact-right {
     order: -1;
   }
-  
+
   .contact-right img {
     max-height: 300px;
     object-fit: cover;
@@ -573,7 +582,7 @@ textarea.contact-inputs {
   .contact-left {
     padding: 20px;
   }
-  
+
   .contact-left-title h2 {
     font-size: 2em;
   }
@@ -599,7 +608,7 @@ textarea.contact-inputs {
 }
 
 .logo-text {
-  font-family: 'Cinzel', serif;
+  font-family: "Cinzel", serif;
   color: #c0c0c0;
   margin: 0;
   text-transform: uppercase;
@@ -612,7 +621,7 @@ textarea.contact-inputs {
   .service-block {
     width: calc(50% - 40px);
   }
-  
+
   .main-text-container {
     padding: 30px 4%;
   }
@@ -622,16 +631,16 @@ textarea.contact-inputs {
   .logo-text {
     font-size: 1.2em;
   }
-  
+
   .logo {
     max-height: 60px;
   }
-  
+
   .button-text {
     padding: 8px 20px;
     font-size: 14px;
   }
-  
+
   .main-text-left h2 {
     font-size: 2em;
   }
@@ -642,24 +651,24 @@ textarea.contact-inputs {
     padding: 15px 3%;
     flex-wrap: wrap;
   }
-  
+
   .nav_links {
     order: 3;
     width: 100%;
     margin-top: 15px;
     justify-content: center;
   }
-  
+
   .service-block {
     width: 100%;
     max-width: 500px;
     margin: 15px auto;
   }
-  
+
   .service-img {
     height: 200px;
   }
-  
+
   .main-text-container {
     gap: 20px;
   }
@@ -669,23 +678,23 @@ textarea.contact-inputs {
   .logo-container {
     gap: 10px;
   }
-  
+
   .logo {
     max-height: 50px;
   }
-  
+
   .logo-text {
     font-size: 1em;
   }
-  
+
   .main-text-left h2 {
     font-size: 1.8em;
   }
-  
+
   .service-img {
     height: 180px;
   }
-  
+
   .button-text {
     padding: 8px 16px;
     font-size: 13px;
@@ -696,16 +705,16 @@ textarea.contact-inputs {
   header {
     padding: 10px 2%;
   }
-  
+
   .logo {
     max-height: 40px;
   }
-  
+
   .button-text {
     padding: 6px 14px;
     font-size: 12px;
   }
-  
+
   .service-img {
     height: 160px;
   }
@@ -715,7 +724,7 @@ textarea.contact-inputs {
   .logo-text {
     display: none; /* Hide text logo on very small screens */
   }
-  
+
   .button-text {
     padding: 5px 12px;
     font-size: 11px;
@@ -726,7 +735,7 @@ textarea.contact-inputs {
   .service-img {
     height: 170px;
   }
-  
+
   .main-text-container {
     padding: 20px 3%;
   }

@@ -12,8 +12,8 @@ body {
   background: linear-gradient(
     135deg,
     #1a1a1a 0%,
-    /* Rich black */ #2c2c2c 50%,
-    /* Dark charcoal */ #1a1a1a 100%
+    #2c2c2c 50%,
+    #1a1a1a 100%
   );
   background-attachment: fixed;
   color: #e0e0e0; /* Soft silver */
@@ -199,16 +199,16 @@ header {
 
 .service-area {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 30px;
   padding: 20px 5%;
-  /*can remove the flex wrap property to result in 3 blocks side by side rather than 2 above and 1 below
-  note ill remove it cause it looks fuckin shit with it*/
+  flex-wrap: nowrap;
   max-width: 1400px;
   margin: 0 auto;
 }
 
 .service-block {
+  flex: 1;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(192, 192, 192, 0.3);
   border-radius: 10px;
@@ -752,5 +752,74 @@ textarea.contact-inputs {
     padding-top: calc(20px + env(safe-area-inset-top));
     padding-left: calc(5% + env(safe-area-inset-left));
     padding-right: calc(5% + env(safe-area-inset-right));
+  }
+}
+
+/* About us page styles */
+.about-container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.section {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(192, 192, 192, 0.3);
+  border-radius: 10px;
+  padding: 40px;
+  margin-bottom: 40px;
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease;
+}
+
+.section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  border-color: #c0c0c0;
+}
+
+.section h1 {
+  font-family: "Cinzel", serif;
+  color: #c0c0c0;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.section li {
+  color: #e0e0e0;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-size: 1.1em;
+  padding: 0 20px;
+}
+
+/* About page responsive styles */
+@media (max-width: 1200px) {
+  .about-container {
+    max-width: 90%;
+    margin: 30px auto;
+  }
+
+  .section h1 {
+    font-size: 2.2em;
+  }
+
+  .section li {
+    font-size: 1em;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    margin: 20px auto;
   }
 }

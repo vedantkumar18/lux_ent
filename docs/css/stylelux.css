@@ -854,6 +854,8 @@ textarea.contact-inputs {
   max-width: 800px;
   margin: 40px auto;
   padding: 0 20px;
+  position: relative;
+  overflow: hidden;
 }
 
 .video-container video {
@@ -863,8 +865,47 @@ textarea.contact-inputs {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   background: rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
 }
 
 .video-container video:hover {
   transform: scale(1.01);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .video-container {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .video-container {
+    margin: 30px auto;
+    padding: 0 15px;
+  }
+  
+  .video-container video {
+    border-radius: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .video-container {
+    margin: 20px auto;
+    padding: 0 10px;
+  }
+  
+  .video-container video {
+    border-radius: 4px;
+  }
+}
+
+/* Handle iPhone notch */
+@supports (padding: max(0px)) {
+  .video-container {
+    padding-left: max(20px, env(safe-area-inset-left));
+    padding-right: max(20px, env(safe-area-inset-right));
+  }
 }
